@@ -1,5 +1,6 @@
 package com.thekim12.firstservice;
 
+import lombok.Builder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -23,7 +24,7 @@ public class FirstServiceController {
     }
 
     @GetMapping("/check")
-    public String check(){
+    public String check() {
         return "Hi, there. This is a message from First Server";
     }
 
